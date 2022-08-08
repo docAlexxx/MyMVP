@@ -1,49 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/text_one_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextOne"/>
+        android:text="@string/textone_text" />
 
     <Button
         android:id="@+id/button_one_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1st Button"/>
+        android:text="@string/one_button_text" />
 
     <TextView
         android:id="@+id/text_two_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextTwo"/>
+        android:text="@string/texttwo_text" />
 
     <Button
         android:id="@+id/button_two_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2nd Button"/>
+        android:text="@string/two_button_text" />
 
     <TextView
         android:id="@+id/text_three_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Text Three"/>
+        android:text="@string/text_three_text" />
 
     <Button
         android:id="@+id/button_three_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3rd Button"/>
+        android:text="@string/three_button_text" />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

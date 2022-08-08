@@ -1,7 +1,7 @@
 package com.example.mymvp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.mymvp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), MainView {

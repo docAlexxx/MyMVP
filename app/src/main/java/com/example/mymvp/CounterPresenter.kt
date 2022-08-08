@@ -1,18 +1,18 @@
 package com.example.mymvp
 
-class CounterPresenter(private val view:MainView) {
+class CounterPresenter(private val view: MainView) {
 
-    val model=CounterModel()
+    val model = CounterModel()
 
-    fun onButtonOneClick (){
+    fun onButtonOneClick() {
         view.setTextOne(model.nextItem(0).toString())
     }
 
-    fun onButtonTwoClick (){
+    fun onButtonTwoClick() {
         view.setTextTwo(model.nextItem(1).toString())
     }
 
-    fun onButtonThreeClick (){
+    fun onButtonThreeClick() {
         view.setTextThree(model.nextItem(2).toString())
     }
 
