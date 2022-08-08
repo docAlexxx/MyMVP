@@ -8,7 +8,7 @@ class CounterModel {
     }
 
     fun nextItem(pos: Int): Int {
-        return counter[pos]++
+        return ++counter[pos]
     }
 
     fun setItem(pos: Int, value: Int) {
