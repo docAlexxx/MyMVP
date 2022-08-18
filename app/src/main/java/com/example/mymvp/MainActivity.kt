@@ -3,11 +3,13 @@ package com.example.mymvp
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mymvp.databinding.ActivityMainBinding
+import moxy.MvpAppCompatActivity
+import moxy.ktx.moxyPresenter
 
-class MainActivity : AppCompatActivity(), MainView {
+class MainActivity : MvpAppCompatActivity(), MainView {
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var presenter: CounterPresenter
+    private val presenter by moxyPresenter { CounterPresenter(CounterModel()) }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +17,6 @@ class MainActivity : AppCompatActivity(), MainView {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        initPresenter()
 
         with(binding) {
             buttonOneBtn.setOnClickListener {
@@ -31,9 +32,6 @@ class MainActivity : AppCompatActivity(), MainView {
 
     }
 
-    private fun initPresenter() {
-        presenter = CounterPresenter(this)
-    }
 
     override fun setTextOne(counter: String) {
         binding.textOneTv.text = counter
