@@ -2,24 +2,12 @@ package com.example.mymvp
 
 import moxy.MvpPresenter
 
-class CounterPresenter(private val model : CounterRepo): MvpPresenter<MainView>() {
+class CounterPresenter(private val repo: UserRepo): MvpPresenter<MainView>() {
 
     override fun onFirstViewAttach() {
         super.onFirstViewAttach()
-
+        viewState.initList(repo.getUsers())
     }
 
-
-    fun onButtonOneClick() {
-        viewState.setTextOne(model.nextItem(0).toString())
-    }
-
-    fun onButtonTwoClick() {
-        viewState.setTextTwo(model.nextItem(1).toString())
-    }
-
-    fun onButtonThreeClick() {
-        viewState.setTextThree(model.nextItem(2).toString())
-    }
 
 }
