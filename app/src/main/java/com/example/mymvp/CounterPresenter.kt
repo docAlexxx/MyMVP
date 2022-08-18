@@ -2,7 +2,7 @@ package com.example.mymvp
 
 import moxy.MvpPresenter
 
-class CounterPresenter(private val model : CounterModel): MvpPresenter<MainView>() {
+class CounterPresenter(private val model : CounterRepo): MvpPresenter<MainView>() {
 
     override fun onFirstViewAttach() {
         super.onFirstViewAttach()

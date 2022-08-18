@@ -1,7 +1,6 @@
 package com.example.mymvp
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.example.mymvp.databinding.ActivityMainBinding
 import moxy.MvpAppCompatActivity
 import moxy.ktx.moxyPresenter
@@ -9,7 +8,7 @@ import moxy.ktx.moxyPresenter
 class MainActivity : MvpAppCompatActivity(), MainView {
 
     private lateinit var binding: ActivityMainBinding
-    private val presenter by moxyPresenter { CounterPresenter(CounterModel()) }
+    private val presenter by moxyPresenter { CounterPresenter(CounterRepo()) }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
