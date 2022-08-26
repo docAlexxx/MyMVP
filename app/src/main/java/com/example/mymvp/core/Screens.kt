@@ -1,7 +1,8 @@
-package com.example.mymvp
+package com.example.mymvp.core
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
+import com.example.mymvp.user.UserFragment
 import com.github.terrakok.cicerone.androidx.FragmentScreen
 
 object UsersScreen : FragmentScreen {

@@ -1,5 +1,6 @@
-package com.example.mymvp
+package com.example.mymvp.user
 
+import com.example.mymvp.repo.UserRepo
 import com.github.terrakok.cicerone.Router
 import moxy.MvpPresenter
 

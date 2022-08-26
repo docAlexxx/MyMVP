@@ -1,6 +1,8 @@
-package com.example.mymvp
+package com.example.mymvp.repo
 
-class UserRepoImpl:UserRepo {
+import com.example.mymvp.model.User
+
+class UserRepoImpl: UserRepo {
 
     private val repositories = listOf(
         User("First User"),

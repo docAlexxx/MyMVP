@@ -1,11 +1,15 @@
-package com.example.mymvp
+package com.example.mymvp.user
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.mymvp.CourseApp
+import com.example.mymvp.core.OnBackPressListener
 import com.example.mymvp.databinding.FragmentUserListBinding
+import com.example.mymvp.main.UserAdapter
+import com.example.mymvp.model.User
+import com.example.mymvp.repo.UserRepoImpl
 
 import moxy.MvpAppCompatFragment
 import moxy.ktx.moxyPresenter

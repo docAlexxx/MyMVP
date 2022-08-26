@@ -1,7 +1,9 @@
-package com.example.mymvp
+package com.example.mymvp.main
 
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.mymvp.CourseApp
+import com.example.mymvp.core.OnBackPressListener
+import com.example.mymvp.R
 import com.example.mymvp.databinding.ActivityMainBinding
 import com.github.terrakok.cicerone.androidx.AppNavigator
 import moxy.MvpAppCompatActivity

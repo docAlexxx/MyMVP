@@ -1,5 +1,6 @@
-package com.example.mymvp
+package com.example.mymvp.user
 
+import com.example.mymvp.model.User
 import moxy.MvpView
 import moxy.viewstate.strategy.AddToEndSingleStrategy
 import moxy.viewstate.strategy.StateStrategyType

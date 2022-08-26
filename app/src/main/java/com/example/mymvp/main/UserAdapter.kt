@@ -1,4 +1,4 @@
-package com.example.mymvp
+package com.example.mymvp.main
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mymvp.R
+import com.example.mymvp.model.User
 
 class UserAdapter () :RecyclerView.Adapter<UserViewHolder>(){
 

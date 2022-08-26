@@ -1,4 +1,4 @@
-package com.example.mymvp
+package com.example.mymvp.main
 
 import moxy.MvpView
 import moxy.viewstate.strategy.AddToEndSingleStrategy

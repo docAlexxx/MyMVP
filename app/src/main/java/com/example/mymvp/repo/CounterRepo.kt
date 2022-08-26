@@ -1,4 +1,4 @@
-package com.example.mymvp
+package com.example.mymvp.repo
 
 class CounterRepo {
     private val counter = mutableListOf(0, 0, 0)
